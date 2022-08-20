@@ -32,7 +32,7 @@ class PrintEditionItem{
 class Magazine extends PrintEditionItem {
     constructor (name, releaseDate, pagesCount) {
         super(name, releaseDate, pagesCount);
-        this.type = "Magazine";
+        this.type = "magazine";
     }
 }
 
@@ -83,7 +83,7 @@ class Library extends PrintEditionItem {
     }
 
     addBook(book) {
-        if (this.state > 30) {
+        if (this.books.state > 30) {
             this.books.push(book)
         }
     }
